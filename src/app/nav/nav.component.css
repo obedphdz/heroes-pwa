@@ -1,0 +1,14 @@
+@media screen and (max-width: 992px) {
+    .nav-item, .form-control, .btn-outline-success{
+        margin: 0 auto;
+    }
+
+    .form-control{
+        width: 80%;
+    }
+    
+}
+
+.navbar{
+    background-color: #6d19b2;
+}

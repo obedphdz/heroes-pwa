@@ -1,0 +1,26 @@
+<div class="card">
+    <div class="card-body">
+        <table class="table mx-auto text-center" *ngIf="ArrayPersonasLocal.length != 0">
+            <thead class="thead-light">
+              <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Correo</th>
+                <th scope="col">Fecha de Nacimiento</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr *ngFor="let i of ArrayPersonasLocal">
+                <td>{{i.nombre}}</td>
+                <td>{{i.sexo}}</td>
+                <td>{{i.correo}}</td>
+                <td>{{i.fecha}}</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="alert alert-danger" *ngIf="ArrayPersonasLocal.length == 0">
+              NO HAY NINGUN USUARIO REGISTRADO :(
+          </div>
+    </div>
+  </div>

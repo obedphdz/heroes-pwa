@@ -1,0 +1,10 @@
+.jumbotron{
+    box-shadow: 10px 10px 20px #00000022;
+}
+
+.suscribirse{
+    width: max-content;
+    margin: 1rem auto 0;
+    font-size: 1.1rem;
+    padding: .7rem 5.5rem;
+}

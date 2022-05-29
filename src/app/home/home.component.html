@@ -1,0 +1,64 @@
+<div class="jumbotron">
+  <h1 class="display-4 text-center mb-5">Bienvenid@!</h1>
+  <p class="lead text-center"> En esta página encontrarás todo lo relacionado con tus superhéroes favoritos, así como de los comics
+    más importantes de todos los tiempos, navega y pasa un tiempo agradable con nosotros...</p>
+  <hr class="my-4">
+  <p class="text-center">¿Deseas suscribirte a nuestro NewsList?</p>
+
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-warning suscribirse  btn-block" data-toggle="modal" data-target="#exampleModal">
+    SUSCRIBIRME
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Formulario de Registro</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <form #formularioPersona="ngForm" (ngSubmit)="formularioEnviado()">
+          <div class="modal-body">
+
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Nombre</label>
+              <input type="text" class="form-control" name="nombre" [(ngModel)]="PersonaRegistro.nombre"
+                id="exampleFormControlInput1" placeholder="Ingresa tu nombre">
+            </div>
+
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Sexo</label>
+              <select class="form-control form-control-sm custom-select" name="sexo" [(ngModel)]="PersonaRegistro.sexo">
+                <option selected value="Masculino">Masculino</option>
+                <option value="Femenino">Femenino</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Correo Electronico</label>
+              <input type="email" class="form-control" name="correo" [(ngModel)]="PersonaRegistro.correo"
+                id="exampleFormControlInput2" placeholder="nombre@correo.com">
+            </div>
+
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Fecha de nacimiento</label>
+              <input type="date" class="form-control" name="fecha" [(ngModel)]="PersonaRegistro.fecha"
+                id="exampleFormControlInput3">
+            </div>
+
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-warning">Save changes</button>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>

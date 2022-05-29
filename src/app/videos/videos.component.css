@@ -1,0 +1,11 @@
+
+.container{
+    width: max-content;
+    margin: 2rem auto;
+}
+iframe{
+    width: 800px;
+    height: 470px;
+    border-radius: 20px;
+    box-shadow: 15px 15px 10px #00000033;
+}
